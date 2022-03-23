@@ -1,0 +1,36 @@
+@import "../../../Variables.scss";
+
+.formulario {
+  padding: 0;
+  //position: absolute;
+  z-index: 2;
+  width: 600px;
+  //height: 100%;
+  height: auto;
+  top: 360px;
+  margin-top: 2%;
+  padding: 0;
+  border-radius: 15px;
+  border: 2px solid $HoumOrange;
+  @media screen and (max-width: 600px) {
+    width: 300px;
+  }
+  li {
+    border-bottom: $Border solid 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    font-size: 25px;
+    color: $ColorText;
+    background-color: $Blanco;
+  }
+  :first-child {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+  :last-child {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+}
